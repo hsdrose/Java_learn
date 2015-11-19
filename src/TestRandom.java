@@ -3,7 +3,8 @@ import java.util.*;
 public class TestRandom 
 {
 	public static void main(String[] args)
-	{
+
+    {
 
 		Random rand=new Random();
 		System.out.println("rand.nextBoolean():"+rand.nextBoolean());
@@ -16,5 +17,6 @@ public class TestRandom
 		System.out.println("rand.nextInt():"+rand.nextInt());
 		System.out.println("rand.nextInt(26)"+rand.nextInt(26));
 		System.out.println("rand.nextLong():"+rand.nextLong());
-	}
+	    Random rand1= new  Random(System.currentTimeMillis());
+    }
 }
