@@ -1,13 +1,14 @@
+import java.text.MessageFormat;
 import java.util.*;
 public  class HelloArgs
 {
-	public static  void  main(String[] aegs)
+	public static  void  main(String[] args)
 	{
 		Locale currrentLocale=null;
 		if(args.length==2)
 		{
 			//使用运行程序的两个参数构造locale实例
-			currrentLocale=new Locale(args[0],args[1])
+			currrentLocale=new Locale(args[0],args[1]);
 		}
 		else
 		{
