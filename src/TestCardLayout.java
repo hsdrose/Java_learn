@@ -1,11 +1,12 @@
 import java.awt.*;
 import javax.swing.*;
+import java.awt.event.*;
 public class TestCardLayout
 {
 	Frame f=new Frame("test");
 	String []  names={"first","second","third","forth","fifth"};
 	Panel pl=new Panel();
-	CardLayout c=CardLayout();
+	CardLayout c=new CardLayout();
 	public void init()
 	{
 		pl.setLayout(c);
@@ -16,12 +17,12 @@ public class TestCardLayout
 		Panel p=new Panel();
 		Button previous=new Button("previous");
 		previous.addActionListener(new ActionListener()
-				{
-					public void actionPerformed(ActionEvent E)
-					{
-						c.previous(pl);
-					}
-				});
+		{
+			public  void actionPerformed(ActionEvent e)
+			{
+				c.previous(pl);
+			}
+		});
 		Button next=new Button("next");
 		next.addActionListener(new ActionListener()
 				{
@@ -39,7 +40,7 @@ public class TestCardLayout
 					}
 				});
 		Button last=new Button("last");
-		last.ActionListener(new ActionListener()
+		last.addActionListener(new ActionListener()
 				{
 					public void actionPerformed(ActionEvent e)
 					{
@@ -47,7 +48,7 @@ public class TestCardLayout
 					}
 				});
 		Button third=new Button("third");
-		third.addActionListener(new addActionListener()
+		third.addActionListener(new ActionListener()
 				{
 					public void actionPerformed(ActionEvent e)
 					{

@@ -1,7 +1,7 @@
 import java.lang.*;
 public class TestFinallyFlow
 {
-	public static void main(String[] args) throw Exception
+	public static void main(String[] args) throws Exception
 	{
 		boolean a=test();
 		System.out.println(a);
