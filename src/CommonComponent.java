@@ -7,7 +7,7 @@ public class CommonComponent
 	CheckboxGroup  cbg=new CheckboxGroup();
 	//定义一个单选框(处于cbg一组)，初始于选中状态
 	Checkbox  male=new Checkbox("男",cbg,true);
-	Checkbox female=new Checkbox("女",cbg,false)
+	Checkbox female=new Checkbox("女",cbg,false);
 	Checkbox married=new Checkbox("是否已婚",false);
 	//定义一个下拉选择框
 	Choice colorChooser=new Choice();
@@ -15,7 +15,7 @@ public class CommonComponent
 	List colorList=new List(6,true);
 	//定义一个5行，20列的多行文本框
 	TextArea ta=new TextArea(5,20);
-	定义一个50列的单行文本域
+	//定义一个50列的单行文本域
 	TextField name=new TextField(50);
 	public void init()
 	{
@@ -39,6 +39,17 @@ public class CommonComponent
 		Box  topLeft=Box.createVerticalBox();
 		topLeft.add(ta);
 		topLeft.add(checkPanel);
+		//创建一个垂直排列组件的Box，盛装top、colorList
+		Box top=Box.createHorizontalBox();
+		top.add(topLeft);
+		top.add(colorList);
+		//将top Box容器添加到窗口的中间
+		f.add(top);
+		f.pack();
+		f.setVisible(true);
+	}
+	public static void main(String[] args) {
+		new CommonComponent().init();
 	}
 
 
