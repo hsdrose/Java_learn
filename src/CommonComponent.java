@@ -47,7 +47,9 @@ public class CommonComponent
 		f.add(top);
 		f.pack();
 		f.setVisible(true);
+
 	}
+	
 	public static void main(String[] args) {
 		new CommonComponent().init();
 	}
