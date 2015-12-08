@@ -1,4 +1,5 @@
 import java.awt.*;
+import java.awt.event.*;
 public class	TestFileDialog
 {
 	Frame f=new Frame("test");
@@ -16,7 +17,7 @@ public class	TestFileDialog
 		}
 		});
 		b2.addActionListener(new ActionListener(){
-		public void actionPerformed()
+		public void actionPerformed(ActionEvent e)
 		{
 			d2.setVisible(true);
 			System.out.println(d2.getDirectory()+d2.getFile());
