@@ -1,6 +1,7 @@
 import java.awt.*;
 import java.awt.event.*;
 import java.awt.Graphics;
+import java.util.Random;
 public class SimpleDraw
 {
 	private final String RECT_SHAPE="rect";
