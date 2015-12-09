@@ -1,6 +1,5 @@
 import java.awt.*;
 import java.awt.event.*;
-import java.awt.Graphics;
 import java.util.Random;
 public class SimpleDraw
 {
@@ -33,7 +32,7 @@ public class SimpleDraw
 				});
 		p.add(rect);
 		p.add(oval);
-		drawArea.setPreferredSize(new Dimensic(250,180));
+		drawArea.setPreferredSize(new Dimension(250,180));
 		f.add(drawArea);
 		f.add(p,BorderLayout.SOUTH);
 		f.pack();
